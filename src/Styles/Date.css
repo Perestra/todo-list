@@ -1,0 +1,35 @@
+
+
+.header {
+    width: 100%;
+    height: auto;
+}
+.data_date {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.data_date h1 {
+    font-size: 35px;
+    color: #BF1B42;
+}
+.current_date {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    column-gap: 10px;
+}
+.current_date span strong{
+    font-size: 22px;
+    color: #BF1B42;
+}
+.current_date span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #CC6167;
+}
