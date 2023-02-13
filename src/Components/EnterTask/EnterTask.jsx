@@ -5,7 +5,7 @@ import { TfiAlignLeft } from "react-icons/tfi";
 import { HiOutlinePlus } from "react-icons/hi"
 import { v4 as uuid } from 'uuid';
 
-const EnterTask = ({ submitItem, taskLength }) => {
+const EnterTask = ({ submitItem, tasksLength }) => {
   const [task, setTask] = useState('')
 
   const createItemList = event => {
@@ -14,7 +14,6 @@ const EnterTask = ({ submitItem, taskLength }) => {
     submitItem(taskObject)
     setTask('')
   }
-
   return (
     <section className='enterTask_section'>
         <form className='task_form' onSubmit={ createItemList }>
@@ -29,7 +28,7 @@ const EnterTask = ({ submitItem, taskLength }) => {
           </button>
         </form>
         <div className='task_length'>
-          <span><strong>03</strong></span>
+          <span><strong>{tasksLength.toString().padStart(2,'0')}</strong></span>
           <p>Tarefas</p>
         </div>
     </section>

@@ -14,15 +14,15 @@ const App = () => {
     setTasks([...tasks, task])
   }
   const deleteItem = id => {
-    let idFilter = tasks.filter(task => task.id !== id)
-    setTasks(idFilter)
+    let filteredTasks = tasks.filter(task => task.id !== id)
+    setTasks(filteredTasks)
   }
 
   return (
     <div className="App">
       <main className="main_content">
         <Date weekDay={ currentWeekDay } date={ currentDate } month={ currentMonth } />
-        <EnterTask submitItem={ addItem }  />
+        <EnterTask submitItem={ addItem } tasksLength={ tasks.length } />
         <List list={ tasks } deleteItemList={ deleteItem }/>
         <Developer />
       </main>
