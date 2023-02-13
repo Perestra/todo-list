@@ -5,18 +5,17 @@ import List from "./Components/List/List";
 import Developer from "./Components/Developer/Developer";
 
 import { currentWeekDay, currentDate, currentMonth } from './Utils/getDate/get-date'
-// import { v4 as uuid } from 'uuid';
 
 const App = () => {
 
   const [tasks, setTasks] = useState([])
 
-  const deleteItem = item => {
-    console.log('deletei', item)
-  }
-
   const addItem = task => {
     setTasks([...tasks, task])
+  }
+  const deleteItem = id => {
+    let idFilter = tasks.filter(task => task.id !== id)
+    setTasks(idFilter)
   }
 
   return (
@@ -24,8 +23,7 @@ const App = () => {
       <main className="main_content">
         <Date weekDay={ currentWeekDay } date={ currentDate } month={ currentMonth } />
         <EnterTask submitItem={ addItem }  />
-        <List list={ tasks } />
-        
+        <List list={ tasks } deleteItemList={ deleteItem }/>
         <Developer />
       </main>
     </div>

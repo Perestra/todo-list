@@ -3,14 +3,14 @@ import '../../Styles/ItemList.css'
 import { AiFillDelete } from 'react-icons/ai'
 
 
-const ItemList = ({ taskName, funcDeleteBtn }) => {
+const ItemList = ({ taskName, deleteItemList }) => {
   return (
    <li className='itemList'>
         <div className='item'>
             <input type="checkbox" name="done" id="done" />
             <p>{ taskName }</p>
         </div>
-        <button type='button' className='delete' onClick={funcDeleteBtn} ><AiFillDelete className='deleteIcon' /></button>
+        <button type='button' className='delete' onClick={ deleteItemList }><AiFillDelete className='deleteIcon' /></button>
    </li>
   )
 }
