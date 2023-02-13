@@ -22,7 +22,7 @@ switch (date.getDay()) {
     case 6:
         weekDay = 'Sábado'
         break;
-    case 7:
+    case 0:
         weekDay = 'Domingo'
         break;  
     default:
@@ -31,41 +31,41 @@ switch (date.getDay()) {
 }
 
 let month = 'Mês'
-switch (date.getMonth() + 1) {
-    case 1:
+switch (date.getMonth()) {
+    case 0:
         month = 'Janeiro'
         break;
-    case 2:
+    case 1:
         month = 'Fevereiro'
         break;
-    case 3:
+    case 2:
         month = 'Março'
         break;
-    case 4:
+    case 3:
         month = 'Abril'
         break;
-    case 5:
+    case 4:
         month = 'Maio'
         break;  
-    case 6:
+    case 5:
         month = 'Junho'
         break;
-    case 7:
+    case 6:
         month = 'Julho'
         break;
-    case 8:
+    case 7:
         month = 'Agosto'
         break;
-    case 9:
+    case 8:
         month = 'Setembro'
         break;
-    case 10:
+    case 9:
         month = 'Outubro'
         break;
-    case 11:
+    case 10:
         month = 'Novembro'
         break;
-    case 12:
+    case 11:
         month = 'Dezembro'
         break;
     default:
