@@ -1,19 +1,23 @@
 import React, { useState } from 'react'
 import '../../Styles/EnterTask.css'
+
 import { TfiAlignLeft } from "react-icons/tfi";
 import { HiOutlinePlus } from "react-icons/hi"
+import { v4 as uuid } from 'uuid';
 
 const EnterTask = ({ submitItem, taskLength }) => {
   const [task, setTask] = useState('')
-  const submit = event => {
+
+  const createItemList = event => {
     event.preventDefault()
-    submitItem(task)
+    const taskObject =  { id: uuid(), taskName: task }
+    submitItem(taskObject)
     setTask('')
   }
 
   return (
     <section className='enterTask_section'>
-        <form className='task_form' onSubmit={ submit }>
+        <form className='task_form' onSubmit={ createItemList }>
           <div className='input_form'>
             <TfiAlignLeft className='listIcon' />
             <input type="text" placeholder='Digite uma tarefa' 
