@@ -31,9 +31,7 @@
     color: #252525;
 }
 .delete {
-    width: 60px;
-    height: 55px;
-
+    padding: 15px;
     border-radius: 50%;
     background-color: #CC6167;
 
@@ -46,7 +44,27 @@
     border: none;
 }
 .deleteIcon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     color: #FFF;
+}
+
+@media screen and (max-width:700px){
+    .itemList {
+        padding: 18px 0;
+    }
+    .item input {
+        width: 18px;
+        height: 18px;
+    }
+    .item p {
+        font-size: 18px;
+    }
+    .delete {
+        padding: 12px;
+    }
+    .deleteIcon {
+        width: 20px;
+        height: 20px;
+    }
 }

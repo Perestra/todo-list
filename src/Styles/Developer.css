@@ -7,3 +7,12 @@
     text-align: center;
     margin: 20px 0 10px;
 }
+
+@media screen and (max-width: 700px) {
+    .footer {
+        margin: 15px 0px 5px;
+    }
+    .developer p {
+        font-size: 13px;
+    }
+}

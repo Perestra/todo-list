@@ -19,11 +19,10 @@
    justify-content: space-between;
 }
 .task_form button {
-    width: 55px;
-    height: 55px;
-
     border-radius: 50%;
     background-color: #CC6167;
+
+    padding: 15px;
 
     display: flex;
     align-items: center;
@@ -35,7 +34,7 @@
 }
 .input_form {
     width: 100%;
-    max-width: 440px;
+    max-width: 85%;
     height: auto;
     
     display: flex;
@@ -51,7 +50,7 @@
     height: 25px;
     color: #BBBBBB;
 }
-.input_form input, .input_form input::placeholder {
+.input_form input {
     width: 100%;
     height: auto;
 
@@ -60,14 +59,17 @@
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 300;
-    color: #BBBBBB;
+    color: #252525;
 
     outline: none;
     border: none;
 }
+.input_form input::placeholder {
+    color: #BBBBBB;
+}
 .addIcon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     color: #FFF;
 }
 .task_length {
@@ -89,4 +91,27 @@
     font-size: 20px;
     font-weight: 400;
     color: #CC6167;
+}
+
+@media screen and (max-width:700px) {
+    .enterTask_section {
+        margin-top: 35px;
+    }
+    .task_form button {
+        padding: 12px;
+    }
+    .listIcon {
+        width: 20px;
+        height: 20px;
+    }
+    .input_form input {
+        font-size: 18px;
+    }
+    .addIcon {
+        width: 20px;
+        height: 20px;
+    }
+    .task_length span, .task_length p {
+        font-size: 16px;
+    }
 }
