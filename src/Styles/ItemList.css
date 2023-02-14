@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 25px 0;
+    padding: 25px 25px;
     border-bottom: 1px solid #bbbbbb60;
 }
 .item {
@@ -51,7 +51,7 @@
 
 @media screen and (max-width:700px){
     .itemList {
-        padding: 18px 0;
+        padding: 20px 25px;
     }
     .item input {
         width: 18px;

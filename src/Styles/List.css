@@ -5,6 +5,7 @@
     height: auto;
 
     flex-grow: 1;
+    overflow-y: auto;
 }
 .list_container {
     width: 100%;

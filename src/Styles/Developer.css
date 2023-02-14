@@ -5,12 +5,18 @@
     height: auto;
 
     text-align: center;
-    margin: 20px 0 10px;
+    margin: 20px 0;
+}
+.developer p {
+    color: #252525;
+}
+.developer strong {
+    color: #BF1B42;
 }
 
 @media screen and (max-width: 700px) {
     .footer {
-        margin: 15px 0px 5px;
+        margin: 15px 0;
     }
     .developer p {
         font-size: 13px;
