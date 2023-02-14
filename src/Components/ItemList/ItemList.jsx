@@ -10,7 +10,7 @@ const ItemList = ({ taskName, deleteItemList }) => {
             <input type="checkbox" name="done" id="done" />
             <p>{ taskName }</p>
         </div>
-        <button type='button' className='delete' onClick={ deleteItemList }><AiFillDelete className='deleteIcon' /></button>
+        <button type='button' className='delete' title='Remover' onClick={ deleteItemList }><AiFillDelete className='deleteIcon' /></button>
    </li>
   )
 }
