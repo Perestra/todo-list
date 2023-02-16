@@ -4,6 +4,7 @@ import '../../Styles/EnterTask.css'
 import { TfiAlignLeft } from "react-icons/tfi";
 import { HiOutlinePlus } from "react-icons/hi"
 import { v4 as uuid } from 'uuid';
+import Button from '../Button/Button';
 
 const EnterTask = ({ submitItem, tasksLength }) => {
   const [task, setTask] = useState('')
@@ -23,9 +24,7 @@ const EnterTask = ({ submitItem, tasksLength }) => {
               value={ task } 
               onChange={ event => setTask(event.target.value) } />
           </div>
-          <button type="submit" title='Adicionar'>
-            <HiOutlinePlus className='addIcon' />
-          </button>
+          <Button type='submit' className='add_button' title='Adicionar' icon={ <HiOutlinePlus className='addIcon' /> }/>
         </form>
         <div className='task_length'>
           <span><strong>{tasksLength.toString().padStart(2,'0')}</strong></span>

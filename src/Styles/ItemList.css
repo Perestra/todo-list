@@ -14,21 +14,6 @@
 .item {
     width: 100%;
     height: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    column-gap: 25px;
-}
-.item input {
-    width: 25px;
-    height: 25px;
-}
-.item p {
-    font-size: 25px;
-    font-weight: 400;
-    color: #252525;
 }
 .delete {
     padding: 15px;
@@ -52,13 +37,6 @@
 @media screen and (max-width:700px){
     .itemList {
         padding: 20px 25px;
-    }
-    .item input {
-        width: 18px;
-        height: 18px;
-    }
-    .item p {
-        font-size: 18px;
     }
     .delete {
         padding: 12px;
