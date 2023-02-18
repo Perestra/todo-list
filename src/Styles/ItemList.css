@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 25px 25px;
+    padding: 25px 25px 25px 50px;
     border-bottom: 1px solid #bbbbbb60;
 }
 .item {
