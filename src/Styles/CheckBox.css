@@ -10,11 +10,17 @@
     -ms-user-select: none;
     user-select: none;
 }
-.label_content p {
+.label_name {
     padding-left: 55px;
     font-size: 25px;
     font-weight: 400;
     color: #252525;
+
+    transition: all ease-in-out 0.1s;
+}
+.label_content input:checked ~ .label_name {
+    color: #BBB;
+    text-decoration: line-through;
 }
 .label_content input {
     position: absolute;
@@ -25,7 +31,7 @@
 }
 .checkmark {
     position: absolute;
-    top: 7px;
+    top: 5px;
     left: 0;
     height: 25px;
     width: 25px;
@@ -33,7 +39,7 @@
     border: 1px solid #9c9c9c;
     border-radius: 5px;
 
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.1s;
 }
 .label_content input:checked ~ .checkmark {
     background-color: #BF1B42;  
@@ -48,7 +54,7 @@
     display: block;
 }
 .label_content .checkmark:after {
-    left: 7.5px;
+    left: 8px;
     top: 3px;
     width: 5px;
     height: 10px;
@@ -65,12 +71,14 @@
         font-size: 18px;
     }
     .checkmark {
-        top: 4px;
-        height: 20px;
-        width: 20px;
+        height: 18px;
+        width: 18px;
     }
     .label_content .checkmark:after {
         left: 5px;
-        top: 1px;
+        top: 2px;
+        
+        width: 3px;
+        height: 8px;
     }
 }
