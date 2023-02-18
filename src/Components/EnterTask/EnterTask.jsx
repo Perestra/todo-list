@@ -7,14 +7,25 @@ import { v4 as uuid } from 'uuid';
 import Button from '../Button/Button';
 
 const EnterTask = ({ submitItem, tasksLength }) => {
+  
   const [task, setTask] = useState('')
 
   const createItemList = event => {
     event.preventDefault()
-    const taskObject =  { id: uuid(), taskName: task }
-    submitItem(taskObject)
+    
+    const taskObject =  { 
+      id: uuid(), 
+      taskName: task, 
+      done: false 
+    }
+
+    if(task.trim().length !== 0) {
+      submitItem(taskObject)
+    }
+
     setTask('')
   }
+
   return (
     <section className='enterTask_section'>
         <form className='task_form' onSubmit={ createItemList }>

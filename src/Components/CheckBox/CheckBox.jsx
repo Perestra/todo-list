@@ -1,12 +1,11 @@
-import React from 'react'
 import '../../Styles/CheckBox.css'
 
-const CheckBox = ({ taskName }) => {
+const CheckBox = ({ taskName, onChange, checked }) => {
   return (
     <label className="label_content">
-      <input type="checkbox" />
+      <input type="checkbox" onChange={ onChange } checked={ checked } />
       <span className="checkmark"></span>
-      <p>{taskName}</p>
+      <p className='label_name'>{taskName}</p>
     </label>
   )
 }

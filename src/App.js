@@ -19,13 +19,19 @@ const App = () => {
     let filteredTasks = tasks.filter(task => task.id !== id)
     setTasks(filteredTasks)
   }
-  
+
+  const isChecked = (id, checked)  => {
+    const findedId = tasks.find(task => task.id === id)
+    findedId.done = checked
+    setTasks([...tasks])
+  }
+
   return (
     <div className="App">
       <main className="main_content">
         <Date weekDay={ currentWeekDay } date={ currentDate } month={ currentMonth } />
         <EnterTask submitItem={ addItem } tasksLength={ tasks?.length || 0 } />
-        <List list={ tasks } deleteItemList={ deleteItem }/>
+        <List list={ tasks } deleteItemList={ deleteItem } isChecked={ isChecked } />
         <Developer />
       </main>
     </div>
