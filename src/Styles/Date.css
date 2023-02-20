@@ -17,7 +17,7 @@
 }
 .data_date h1 {
     font-size: 35px;
-    color: #BF1B42;
+    color: var(--main-color);
 }
 .current_date {
     width: 100%;
@@ -28,12 +28,12 @@
 }
 .current_date span strong{
     font-size: 22px;
-    color: #BF1B42;
+    color: var(--main-color);
 }
 .current_date span {
     font-size: 20px;
     font-weight: 400;
-    color: #CC6167;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 700px) {

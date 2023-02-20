@@ -9,7 +9,7 @@
     justify-content: space-between;
 
     padding: 25px 25px 25px 50px;
-    border-bottom: 1px solid #bbbbbb60;
+    border-bottom: 1px solid #bbbbbb9a;
 }
 .item {
     width: 100%;
@@ -18,7 +18,7 @@
 .delete {
     padding: 15px;
     border-radius: 50%;
-    background-color: #CC6167;
+    background-color: var(--secondary-color);
 
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
 .deleteIcon {
     width: 30px;
     height: 30px;
-    color: #FFF;
+    color: var(--white);
 }
 
 @media screen and (max-width:700px){

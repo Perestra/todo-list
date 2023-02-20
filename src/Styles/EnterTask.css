@@ -20,7 +20,7 @@
 }
 .task_form button {
     border-radius: 50%;
-    background-color: #CC6167;
+    background-color: var(--secondary-color);
 
     padding: 15px;
 
@@ -43,12 +43,12 @@
 
     column-gap: 15px;
     padding: 0 10px;
-    border-bottom: 1px solid #BBBBBB;
+    border-bottom: 1px solid var(--input-text-color);
 }
 .listIcon {
     width: 25px;
     height: 25px;
-    color: #BBBBBB;
+    color: var(--input-text-color);
 }
 .input_form input {
     width: 100%;
@@ -59,18 +59,18 @@
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 300;
-    color: #252525;
+    color: var(--label-name-color);
 
     outline: none;
     border: none;
 }
 .input_form input::placeholder {
-    color: #BBBBBB;
+    color: var(--input-text-color);
 }
 .addIcon {
     width: 30px;
     height: 30px;
-    color: #FFF;
+    color: var(--white);
 }
 .task_length {
     width: 100%;
@@ -85,12 +85,12 @@
 }
 .task_length span {
     font-size: 20px;
-    color: #BF1B42;
+    color: var(--main-color);
 }
 .task_length p {
     font-size: 20px;
     font-weight: 400;
-    color: #CC6167;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width:700px) {

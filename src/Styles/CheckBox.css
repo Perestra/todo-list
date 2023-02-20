@@ -14,12 +14,12 @@
     padding-left: 55px;
     font-size: 25px;
     font-weight: 400;
-    color: #252525;
+    color: var(--label-name-color);
 
     transition: all ease-in-out 0.1s;
 }
 .label_content input:checked ~ .label_name {
-    color: #BBB;
+    color: var(--input-text-color);
     text-decoration: line-through;
 }
 .label_content input {
@@ -35,15 +35,15 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #FFF;
-    border: 1px solid #9c9c9c;
+    background-color: var(--white);
+    border: 1px solid var(--border-checkbox);
     border-radius: 5px;
 
     transition: all ease-in-out 0.1s;
 }
 .label_content input:checked ~ .checkmark {
-    background-color: #BF1B42;  
-    border: 1px solid #BF1B42;
+    background-color: var(--main-color);  
+    border: 1px solid var(--main-color);
 }
 .checkmark:after {
     content: "";

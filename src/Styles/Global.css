@@ -33,6 +33,17 @@ body {
     border-radius: 10px;
     background: #FFF; 
 }
+:root {
+    --main-color: #BF1B42;
+    --secondary-color: #CC6167;
+    --label-name-color: #252525;
+    --input-text-color: #BBB;
+    --white: #FFF;
+    --border-checkbox: #9c9c9c;
+}
+.darkmode:root {
+
+}
 
 @media screen and (max-width:700px) {
     .main_content {
