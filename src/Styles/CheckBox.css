@@ -11,11 +11,16 @@
     user-select: none;
 }
 .label_name {
-    padding-left: 55px;
+    width: 95%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    
     font-size: 25px;
     font-weight: 400;
     color: var(--label-name-color);
-
+    
+    padding-left: 55px;
     transition: all ease-in-out 0.1s;
 }
 .label_content input:checked ~ .label_name {
