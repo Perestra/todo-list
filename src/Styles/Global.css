@@ -8,10 +8,7 @@
   
 body {
     font-family: 'Poppins', sans-serif;
-
-    background: #23074d;  
-    background: -webkit-linear-gradient(to left, #cc5333, #23074d);  
-    background: linear-gradient(to left, #cc5333, #23074d); 
+    background: #161616;
 }
 
 
@@ -31,7 +28,7 @@ body {
     flex-direction: column;
 
     border-radius: 10px;
-    background: #FFF; 
+    background: var(--white); 
 }
 :root {
     --main-color: #BF1B42;
@@ -40,9 +37,6 @@ body {
     --input-text-color: #BBB;
     --white: #FFF;
     --border-checkbox: #9c9c9c;
-}
-.darkmode:root {
-
 }
 
 @media screen and (max-width:700px) {
